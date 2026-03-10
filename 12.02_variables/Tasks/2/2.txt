@@ -1,0 +1,119 @@
+1.
+
+let a = 3;
+let b = 4;
+let c = 5;
+let perimetras = a + b + c;
+
+console.log("Perimetras = " + perimetras)
+
+2.
+
+let a = +prompt('Iveskite pirmo kampo skaiciu')
+let b = +prompt('Iveskite antro kampo skaiciu')
+let x = 180 - a - b
+
+console.log('Ivesta: ' + a + ', ' + b + ';')
+console.log('Gauta: ' + x)
+
+3.
+
+let a = +prompt('Iveskite km')
+let x = a * 1000
+
+console.log('Ivesta: ' + a + ' km')
+console.log('Gauta: ' + x + ' m')
+
+4.
+
+let a = +prompt('Iveskite km')
+let b = +prompt('Iveskite m')
+let x = a * 1000 + b
+
+console.log('Ivesta: ' + a + ' km ir ' + b + ' m:')
+console.log('Gauta: ' + x + ' m')
+
+5.
+
+let a = 18
+let b = a * 24
+let c = b * 7
+
+console.log('Gauta: per diena - ' + b + ', per savaite - ' + c)
+
+6.
+
+let d = +prompt('Iveskite diena no metu pradzios')
+let s = Math.trunc(d / 7)
+
+console.log('Ivesta: ' + d + ' dienu')
+console.log('Gauta: ' + s + ' savaite')
+
+7.
+
+let n = +prompt('Kiek devintoku dalyvavo olimpiadoje?')
+let m = +prompt('Kiek mokytoja nupirko saldainiu?')
+let s = Math.trunc(m / n)
+let k = m % n
+
+console.log('Ivesta: n = ' + n + ', m = ' + m)
+console.log('Gauta: s = ' + s + ', k = ' + k)
+
+8.
+
+let ct = +prompt('Kiek atidave centais?')
+let eg = Math.trunc(ct / 100)
+let ctg = Math.round((ct / 100 - eg) * 100)
+
+console.log('Ivesta: ' + ct)
+console.log('Gauta: ' + eg + ' Eur ir ' + ctg + ' ct')
+
+9.
+
+let h = +prompt('Iveskite pakilimo valanda')
+let min = +prompt('Iveskite pakilimo minutes')
+let truk = +prompt('Iveskite skrydzio trumke minutemis')
+let h1 = h + Math.trunc(truk / 60)
+let min1 = (min + truk) % 60
+
+console.log('Isskrido: ' + h + ' h ' + min + ' min')
+console.log('Skrydzio laikas: ' + truk + ' min')
+console.log('Atskrido: ' + h1 + ' h ' + min1 + ' min')
+
+10.
+
+let h = +prompt('Kelinta valanda prasideda filmas?')
+let min = +prompt('Kelinta valandos minute prasideda filmas?')
+let h1 = +prompt('Kiek valandu trunka filmas?')
+let min1 = +prompt('Kiek minuciu trunka filmas?')
+let pl = 10
+let pk = 3
+let pv = pl * pk
+let h2 = Math.trunc((h * 60 + min + h1 * 60 + min1 + pv) / 60)
+let min2 = (h * 60 + min + h1 * 60 + min1 + pv) % 60
+
+console.log('Filmo pradzia: ' + h + ' h ' + min + ' min')
+console.log('Filmo trukme: ' + h1 + ' h ' + min1 + ' min')
+console.log('Pertraukos: ' + pk + ' po ' + pl + ' min. Is viso: ' + pv + ' min')
+console.log('Filmo pabaiga: ' + h2 + ' h ' + min2 + ' min')
+
+11.
+
+let h = +prompt('Kelinta dabar valanda?');
+let min = +prompt('Kiek minuciu?');
+let s = +prompt('Kiek sekundziu?');
+let s1 = 5;
+let h2 = Math.trunc((h * 3600 + min * 60 + s + s1) / 3600);
+let min2 =
+  s + s1 > 59
+    ? Math.trunc(
+        (h * 3600 + min * 60 + s + s1 - (h * 3600 + min * 60 + s)) / 60
+      )
+    : Math.trunc((min * 60 + s + s1) / 60);
+let s2 = s + s1 > 59 ? (min * 60 + s + s1) % 60 : (s2 = s + s1);
+console.log('Ivestas laikas: ' + h + ':' + min + ':' + s);
+console.log('Gautas laikas: ' + h2 + ':' + min2 + ':' + s2);
+// let min2 = Math.trunc(((h * 3600 + min * 60 + s + s1) - (h * 3600 + min * 60 + s)) / 60)
+// let min2 = Math.trunc((min * 60 + s + s1) / 60)
+// let s2 = (min * 60 + s + s1) % 60
+// let s2 = s + s1

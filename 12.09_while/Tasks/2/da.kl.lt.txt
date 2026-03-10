@@ -1,0 +1,267 @@
+// 1
+
+let m = +prompt(`Kiek saldainiu rado Martynas?`);
+let n = m;
+let d = 0;
+
+while (m > 0) {
+  d++;
+  m -= d;
+}
+
+console.log(`Kai m = ${n} tai d = ${d}`);
+
+// 2
+
+let t = +prompt(`Įveskite kuro bako talpą:`);
+let n = +prompt(`Įveskite kuro sąnaudas n:`);
+let d = 0;
+
+console.log(`Įveskite kuro bako talpą: ${t}`);
+console.log(`Įveskite kuro sąnaudas n: ${n}`);
+
+while (t > 0) {
+  d++;
+  if (d % 2 == 0) {
+    t -= n;
+  } else {
+    t -= 2 * n;
+  }
+}
+
+console.log(`Keliauti bus galima ${d} dienų/(as)/(ą).`);
+
+// 3
+
+let m = +prompt(`Įveskite knygos skyrių skaičių:`);
+let n = m;
+let d = 0;
+
+console.log(`Įveskite knygos skyrių skaičių: ${m}`);
+
+while (m > 0) {
+  d++;
+  m -= d;
+}
+
+console.log(`Tadas visą knygą perskaitys per ${d} dienas (-ų).`);
+console.log(
+  `Tadas vidutiniškai per dieną perskaitė ${(n / d).toFixed(2)} skyrius(-ų).`
+);
+
+// 4
+
+let act = prompt(`Enter action!`);
+let num;
+console.log(`Entered action: ${act}`);
+if (act == 1) {
+  let sum = 0;
+  while (act == 1) {
+    num = +prompt(`Enter number`);
+    console.log(`Entered number: ${num}`);
+    if (num == 0) {
+      break;
+    }
+    sum += num;
+  }
+  console.log(`sum: ${sum}`);
+} else if (act == 2) {
+  let sub = +prompt(`Enter first number`);
+  console.log(`Entered number: ${sub}`);
+  while (act == 2) {
+    num = +prompt(`Enter number`);
+    console.log(`Entered number: ${num}`);
+    if (num == 0) {
+      break;
+    }
+    sub -= num;
+  }
+  console.log(`sub: ${sub}`);
+} else if (act == 3) {
+  let mult = 1;
+  while (act == 3) {
+    num = +prompt(`Enter number`);
+    console.log(`Entered number: ${num}`);
+    if (num == 0) {
+      break;
+    }
+    mult *= num;
+  }
+  console.log(`mult: ${mult}`);
+} else if (act == 4) {
+  let max = +prompt(`Enter number`);
+  console.log(`Entered number: ${max}`);
+  while (act == 4) {
+    num = +prompt(`Enter number`);
+    console.log(`Entered number: ${num}`);
+    if (num == 0) {
+      break;
+    }
+    if (num > max) {
+      max = num;
+    }
+  }
+  console.log(`max: ${max}`);
+} else if (act == 5) {
+  let min = +prompt(`Enter number`);
+  console.log(`Entered number: ${min}`);
+  while (act == 5) {
+    num = +prompt(`Enter number`);
+    console.log(`Entered number: ${num}`);
+    if (num == 0) {
+      break;
+    }
+    if (num < min) {
+      min = num;
+    }
+  }
+  console.log(`min: ${min}`);
+} else {
+  alert(`Action forbidden`);
+}
+
+// 5
+
+let a = Math.round(Math.random() * 10);
+let b = Math.round(Math.random() * 10);
+let c;
+
+while (true) {
+  c = +prompt(`Calculate: ${a} + ${b}?`);
+  if (a + b == c) {
+    console.log(`Congrats! ${a} + ${b} = ${c}`);
+    break;
+  }
+  alert(`Wrong answer. Try again`);
+}
+
+// 6
+
+let s = +prompt(`Enter number`);
+let n;
+
+console.log(`Entered number: s = ${s}`);
+console.log(`Digits:`);
+
+while (s > 0) {
+  n = Math.trunc(s % 10);
+  console.log(n);
+  s = Math.trunc(s / 10);
+}
+
+// Skaiciai is eiles (1):
+
+// let x = +prompt(`Enter number`);
+// let i = x.toString().length;
+// let c;
+
+// while (x > 0 && i > 0) {
+//   c = Math.trunc(x / Math.pow(10, i - 1));
+//   console.log(c);
+//   x = x - c * Math.pow(10, i - 1);
+//   i--;
+// }
+
+// Skaiciai is eiles (2):
+
+// let x = +prompt(`Enter number`);
+// let y = x;
+// let n;
+// let i = 0;
+// let c;
+
+// console.log(`Ivedastas skaicius: ${x}`);
+// console.log(`Issivedam skaicius atvirksciai ir suskaiciuojam jų kieki`);
+
+// while (x > 0) {
+//   n = Math.trunc(x % 10);
+//   console.log(n);
+//   x = Math.trunc(x / 10);
+//   i++;
+// }
+
+// console.log(`Pasitikrinam reiksmes`);
+// console.log(`Kiekis, kuris veliau virs laipsniu i = ${i}`);
+// console.log(`x = ${x}`);
+// console.log(`x pradzioje issireiskiam y, kad nekistu`);
+// console.log(`y = x: ${y}`);
+// console.log(`Issivedam skaicius paeiliui`);
+
+// while (y > 0 && i > 0) {
+//   c = Math.trunc(y / Math.pow(10, i - 1));
+//   console.log(c);
+//   y = y - c * Math.pow(10, i - 1);
+//   i--;
+// }
+
+// 7
+
+let a = +prompt(`Enter number`);
+let n;
+let s = 0;
+
+console.log(`Entered number: a = ${a}`);
+
+while (a > 0) {
+  n = Math.trunc(a % 10);
+  a = Math.trunc(a / 10);
+  s++;
+}
+
+console.log(`Sum: ${s}`);
+
+// 8
+
+let a = +prompt(`Enter number`);
+let n;
+let s = 1;
+
+console.log(`Entered number a = ${a}`);
+
+while (a > 0) {
+  n = Math.trunc(a % 10);
+  a = Math.trunc(a / 10);
+  if (n == 0) {
+    continue;
+  }
+  s *= n;
+}
+
+console.log(`Sub: ${s}`);
+
+// 9
+
+let a = +prompt(`Enter number`);
+let n;
+let s = 0;
+
+console.log(`Entered number a = ${a}`);
+
+while (a > 0) {
+  n = Math.trunc(a % 10);
+  a = Math.trunc(a / 10);
+  s++;
+}
+
+console.log(`Count: ${s}`);
+
+// 10
+
+let a = +prompt(`Enter number`);
+let n;
+let even = 0;
+let odd = 0;
+
+console.log(`Entered number a = ${a}`);
+
+while (a > 0) {
+  n = Math.trunc(a % 10);
+  a = Math.trunc(a / 10);
+  if (n % 2 == 0) {
+    even++;
+  } else {
+    odd++;
+  }
+}
+
+console.log(`Even: ${even}, Odd: ${odd}`);

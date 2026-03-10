@@ -1,0 +1,87 @@
+1.
+
+console.log("Dainius Kleismantas")
+
+2.
+
+let a = 'Hello world!'
+let b = '(And all the people of the world)'
+
+console.log(a + '\n' + b)
+
+3.
+
+console.log('    *    ');
+console.log('   ***   ');
+console.log('  *****  ');
+console.log(' ******* ');
+console.log('*********');
+console.log('    *    ');
+
+5.
+
+const a = 365
+const b = 24
+const c = 60
+const d = 60
+const e = a * b * c * d
+
+console.log("There are " + e +  "seconds in a year.")
+
+6.
+
+let a = 10
+let b = 15
+let sum = a + b
+
+console.log(a + ' + ' + b + ' = ' + sum)
+
+7.
+
+let a = 10
+let b = 15
+let c = a * b
+
+console.log(a + ' * ' + b + ' = ' + c)
+
+8.
+
+let a = +prompt('Type a number')
+let b = +prompt('Type another number')
+let sum = a + b
+
+console.log('Sum of the numbers: ' + sum)
+
+9.
+
+let a = +prompt('Type a number')
+let b = +prompt('Type another number')
+let c = a / b
+
+console.log('Division: ' + a + ' / ' + b + ' = ' + c)
+
+10.
+
+let pi = Math.PI
+let r = +prompt('Enter the radius')
+let c = 2 * pi * r
+
+console.log('Circumference of the circle: ' + c)
+
+11.
+
+let a = +prompt('Type a number:')
+let b = +prompt('Type another number:')
+let c = Math.max(a, b)
+
+console.log('The bigger number of the two numbers given was: ' + c)
+
+12.
+
+let name = prompt('Type your name:')
+let age = +prompt('Type your age:')
+let name2 = prompt('Type your name:')
+let age2 = +prompt('Type your age:')
+let agesum = age + age2
+
+console.log(name + ' and ' + name2 + ' are ' + agesum + ' years old in total.')

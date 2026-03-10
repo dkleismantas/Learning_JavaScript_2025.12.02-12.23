@@ -1,0 +1,94 @@
+// 1
+
+for (let i = 0; i < 10; i++) {
+  console.log(`${i}`);
+}
+
+// 2
+
+for (let i = 0; i < 10; i++) {
+  console.log(`${i} - ${Math.pow(i, 2)}`);
+}
+
+// 3
+
+for (let i = 10; i < 100; i = i + 2) {
+  console.log(`${i}`);
+}
+
+// 4
+
+let a = +prompt("Iveskite skaiciu");
+
+for (let i = 1; i <= a; i++) {
+  console.log(`${i}`);
+}
+
+// 5
+
+let a = +prompt("Iveskite pradini skaiciu");
+let b = +prompt("Iveskite pabaigos skaiciu");
+
+for (let i = a; i <= b; i++) {
+  console.log(`${i}`);
+}
+
+// 6
+
+let v = prompt("Iveskite varda");
+let n = +prompt("Iveskite skaiciu");
+
+for (let i = 1; i <= n; i++) {
+  console.log(`${v}`);
+}
+
+// 7
+
+let n = +prompt("Iveskite skaiciu");
+
+for (let i = 1; i <= 10; i++) {
+  console.log(`${n} * ${i} = ${n * i}`);
+}
+
+// 8
+
+let x = +prompt("Iveskite skaiciu");
+
+for (let x = -10; x <= 10; x++) {
+  console.log(`Kai x = ${x} tai y = ${7 * Math.pow(x, 2) + 5 * x - 3}`);
+}
+
+// 9
+
+let a = +prompt("iveskite pradini bilieto numeri");
+let b = +prompt("iveskite paskutini numeri");
+let kiekis = 0;
+for (let i = a; i <= b; i++) {
+  if (i % 6 == 0) {
+    kiekis++;
+  }
+}
+
+console.log(`Marskineliu kiekis: ${kiekis}`);
+
+// 10
+
+let n = +prompt("iveskite egluciu kieki");
+let suma = 0;
+for (let i = 1; i <= n; i++) {
+  let a = +prompt(`Iveskite ${i} eglutes auksti`);
+  console.log(`Iveskite ${i} eglutes auksti ${a}`);
+  suma = suma + a;
+}
+
+console.log(`Egluiu auksio vidurkis: ${suma / n}`);
+
+// 11
+
+let x = +prompt(`Ivesk skaiciu`);
+
+for (let i = 1000; i < 10000; i++) {
+  if (x == Math.pow(Math.trunc(i / 100) + (i % 100), 2)) {
+    console.log(`Laimingi skaiciai: ${i}`);
+  }
+}

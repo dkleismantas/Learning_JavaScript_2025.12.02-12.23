@@ -1,0 +1,106 @@
+// 1
+
+let a = `# `;
+let b = ` #`;
+let c = ``;
+let d = c;
+let n = +prompt(`sk`);
+let i;
+let j;
+let k;
+for (i = 1; i <= n; i++) {
+  if (i % 2 != 0) {
+    for (j = 1; j <= n; j++) {
+      c += a;
+    }
+    console.log(c);
+    c = d;
+  } else {
+    for (k = 1; k <= n; k++) {
+      c += b;
+    }
+    console.log(c);
+    c = d;
+  }
+}
+
+// 2
+
+// a
+
+let a = `# `;
+let b = a;
+let n = +prompt(`Iveskite trikampio dydi`);
+let i;
+
+for (i = 1; i <= n; i++) {
+  console.log(a);
+  a += b;
+}
+
+// b
+
+let a = ``;
+let b = `# `;
+let c = a;
+let n = +prompt(`sk`);
+let m = n;
+let i;
+let j;
+
+for (i = 1; i <= m; i++) {
+  for (j = 1; j <= n; j++) {
+    a += b;
+  }
+  console.log(a);
+  a = c;
+  n--;
+}
+
+// c
+
+let a = ``;
+let b = `# `;
+let c = `  `;
+let d = a;
+let n = +prompt(`Iveskite trikampio dydi`);
+let m = n;
+let i;
+let j;
+let k;
+
+for (i = 1; i <= m; i++) {
+  for (k = 1; k < i; k++) {
+    a += c;
+  }
+  for (j = 1; j <= n; j++) {
+    a += b;
+  }
+  console.log(a);
+  a = d;
+  n--;
+}
+
+// d
+
+let a = ``;
+let b = `# `;
+let c = a;
+let d = `  `;
+let n = +prompt(`sk`);
+let m = n;
+let i;
+let j;
+let k;
+
+for (i = 1; i <= m; i++) {
+  for (j = 1; j < n; j++) {
+    a += d;
+  }
+  for (k = 1; k <= i; k++) {
+    a += b;
+  }
+  console.log(a);
+  a = c;
+  n--;
+}

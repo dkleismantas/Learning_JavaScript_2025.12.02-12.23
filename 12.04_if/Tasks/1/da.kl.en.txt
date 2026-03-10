@@ -1,0 +1,87 @@
+14. 
+
+let a = +prompt('Type a number') > 0 ? 'Positive' : 'Is not positive';
+console.log(a);
+
+
+15.
+
+let a =
+  +prompt('How old are you?') >= 18
+    ? 'You have reached the age of majority!'
+    : 'You have not reached the age of majority yet!';
+console.log(a);
+
+16.
+
+let a = +prompt('Type a number:');
+if (a % 2 === 0) {
+  console.log(`Number ${a} is even.`);
+} else {
+  console.log(`Number ${a} is odd.`);
+}
+
+17.
+
+let a = +prompt('Type the first number:');
+let b = +prompt('Type the second number:');
+if (a > b) {
+  console.log(`Greater number: ${a}`);
+} else if (a < b) {
+  console.log(`Greater number: ${b}`);
+} else {
+  console.log(`They are equal`);
+}
+
+
+18.
+
+let a = +prompt(`Type the points [0-60]:`);
+if (a >= 0 && a < 30) {
+  console.log(`failed`);
+} else if (a >= 30 && a < 35) {
+  console.log(`1`);
+  } else if (a >= 35 && a < 40) {
+  console.log(`2`);
+  } else if (a >= 40 && a < 45) {
+  console.log(`3`);
+  } else if (a >= 45 && a < 50) {
+  console.log(`4`);
+  } else if (a >= 50 && a < 61) {
+  console.log(`5`);
+} else  {
+  console.log(`Wrong number`)
+};
+
+19.
+
+let a = +prompt(`How old are you?`);
+if (a >= 0 && a <= 120) {
+  console.log(`OK`);
+} else {
+  console.log(`Impossible!`);
+}
+
+20.
+
+let name = prompt(`Type your username:`);
+let pass = prompt(`Type your password:`);
+if (
+  (name === 'alex' && pass === 'mightyducks') ||
+  (name === 'emily' && pass === 'cat')
+) {
+  console.log(`You are now logged into the system!`);
+} else {
+  console.log(`Your username or password was invalid!`);
+}
+
+21.
+
+let y = +prompt('Enter a year');
+if (y % 4 === 0 && y % 100 === 0 && y % 400 > 0) {
+  console.log('The year is not a leap year.');
+} else if (y % 4 === 0) {
+  console.log('The year is a leap year.');
+} else {
+  console.log('The year is not a leap year.');
+}

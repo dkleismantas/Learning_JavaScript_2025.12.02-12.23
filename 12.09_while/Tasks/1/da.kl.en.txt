@@ -1,0 +1,147 @@
+// 1
+
+let number = 1;
+while (number <= 100) {
+  console.log(number);
+  number++;
+}
+
+// 2
+
+let number = 100;
+while (number >= 1) {
+  console.log(number);
+  number--;
+}
+
+// 3
+
+let number = 2;
+while (number <= 100) {
+  console.log(number);
+  number = number + 2;
+}
+
+// 4
+
+let number = 1;
+let number2 = +prompt(`Iveskite skaiciu`);
+while (number <= number2) {
+  console.log(number);
+  number++;
+}
+
+// 5
+
+let number = +prompt(`Iveskite pirma skaiciu`);
+let number2 = +prompt(`Iveskite antra skaiciu`);
+while (number <= number2) {
+  console.log(number);
+  number++;
+}
+
+// 6
+
+let num = +prompt(`Enter number`);
+let start = 1;
+let sum = 0;
+while (start <= num) {
+  sum += start;
+  start++;
+}
+
+console.log(sum);
+
+// 7
+
+let start = +prompt(`Enter first number`);
+let num = +prompt(`Enter last number`);
+let sum = 0;
+if (start > num) {
+  console.log(`Neteisinga salyga`);
+} else {
+  while (start <= num) {
+    sum += start;
+    start++;
+  }
+  console.log(sum);
+}
+
+// 8
+
+let sum = 0;
+while (true) {
+  let number = +prompt(`Enter a numbe`);
+  if (!number) break;
+  sum += number;
+  console.log(`Sum now: ${sum}`);
+}
+
+console.log(`Sum in the end: ${sum}`);
+
+// 9
+
+let start = 0;
+let raise = +prompt(`Enter number`);
+let sum = 0;
+while (start <= raise) {
+  sum += Math.pow(2, start);
+  start++;
+}
+
+console.log(sum);
+
+// 10
+
+let start = 1;
+let num = +prompt(`Enter number`);
+let fact = 1;
+while (start <= num) {
+  fact *= start;
+  start++;
+}
+
+console.log(fact);
+
+// 11
+
+let pswd;
+while (true) {
+  pswd = prompt(`Enter password!`);
+  if (pswd == `carrot`) {
+    alert(`Right!`);
+    break;
+  }
+  if (pswd != `carrot`) alert(`Wrong! Try again.`);
+}
+console.log(`The secret is: jryy qbar!`);
+
+// 12
+
+let i;
+let sum = 0;
+let count = 0;
+let even = 0;
+let odd = 0;
+
+while (true) {
+  i = +prompt(`Type numbers:`);
+  if (i == -1) {
+    console.log(`Thank you and see you later!`);
+    break;
+  }
+  sum += i;
+  count++;
+  if (i % 2 == 0) {
+    even++;
+  }
+  if (i % 2 != 0) {
+    odd++;
+  }
+}
+
+console.log(`The sum is ${sum}`);
+console.log(`How many numbers: ${count}`);
+console.log(`Average: ${sum / count}`);
+console.log(`Even numbers: ${even}`);
+console.log(`Odd numbers: ${odd}`);
