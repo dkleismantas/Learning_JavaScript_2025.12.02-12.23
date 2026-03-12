@@ -23,7 +23,7 @@ In this course, I learned the basics of JavaScript. I became familiar with varia
 - Copy the solution of the task and paste it **[here](https://jsbin.com/?js,console)** or **[here](https://playcode.io/empty-javascript)** (In the first link, you must press Run to execute the code; in the second link, the code runs automatically.)
 - The result will appear in the console window.
 
-## Method 2 *(Less suitable, because some tasks require browser functionality. Do not use this method for tasks that contain the alert method.)*
+## Method 2 *(Less suitable, because some tasks require browser functionality. Do not use this method for tasks that contain the alert method)*
 
 - Download and install **Node.js**.
 - Open **Microsoft Visual Studio Code**.
